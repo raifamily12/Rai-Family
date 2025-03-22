@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #333;
+            transition: color 0.3s ease-in-out;
+        }
+
+        h1:hover {
+            color: #007bff;
+        }
+
+        header {
+            font-size: 24px;
+            margin-top: 20px;
+            cursor: pointer;
+            padding: 10px;
+            background: #4f4dcec5;
+            color: white;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        header:hover {
+            background: #0056b3;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            display: none;
+            padding: 10px;
+            text-align: left;
+            transition: max-height 0.3s ease-in-out;
+        }
+
+        .show {
+            display: block;
+        }
+
+        button {
+            background: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>The Ultimate Description of Rai's Dynasty</h1>
+
+    <header onclick="toggleContent()">The Beginning</header>
+
+    <section>
+        <div class="content" id="content">
+            <p>Rai's Family is a Middle Class Family whose most of the members are enrolled in Govt. Jobs </p>
+            <button onclick="alert('More info coming soon as the website is new!')">Learn More</button>
+        </div>
+    </section>
+
+    <script>
+        function toggleContent() {
+            var content = document.getElementById("content");
+            content.classList.toggle("show");
+        }
+    </script>
+
+</body>
+</html>
